@@ -1,0 +1,15 @@
+<h1>Demonstartion of ngFor Structural directives</h1>
+<h2>{{city}}</h2>
+<h2>{{city [0]}}</h2>
+<h2>{{city [1]}}</h2>
+<h2>{{city [2]}}</h2>
+
+
+<h2>Data using for loop</h2>
+<div *ngFor="let value of city">
+  <h2>{{value}}</h2>
+</div>
+
+<div *ngFor="let value of city; index as i">
+  <h2>{{i}} : {{value}}</h2>
+</div>
